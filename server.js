@@ -2,7 +2,9 @@ import express from "express";
 import mongoose from "mongoose";
 import Cards from "./dbCards.js";
 import Cors from "cors";
-require("dotenv").config();
+import * as dotenv from "dotenv";
+dotenv.config();
+
 //App Config
 const app = express();
 const port = process.env.PORT || 8000;
